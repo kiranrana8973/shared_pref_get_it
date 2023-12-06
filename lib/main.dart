@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shared_pref_get_it/app.dart';
-import 'package:get_it/get_it.dart';
-import 'package:shared_pref_get_it/models/Arithmetic.dart';
+import 'package:shared_pref_get_it/di/di.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await initModule();
+
   runApp(
     const App(),
   );
