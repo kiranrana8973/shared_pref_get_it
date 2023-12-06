@@ -1,17 +1,10 @@
 class Arithmetic {
-  final int first;
-  final int second;
 
-  Arithmetic({
-    required this.first,
-    required this.second,
-  });
-
-  int add() {
+  int add(int first,int second) {
     return first + second;
   }
 
-  int sub() {
+  int sub(int first,int second) {
     return first - second;
   }
 }

@@ -48,10 +48,9 @@ class _ArithmeticViewState extends State<ArithmeticView> {
             _gap,
             ElevatedButton(
               onPressed: () {
-                Arithmetic arithmetic =
-                    Arithmetic(first: _first ?? 0, second: _second ?? 0);
+                Arithmetic arithmetic = Arithmetic();
                 setState(() {
-                  _result = arithmetic.add();
+                  _result = arithmetic.add(_first ?? 0, _second ?? 0);
                 });
               },
               child: const Text('Add'),
@@ -59,10 +58,9 @@ class _ArithmeticViewState extends State<ArithmeticView> {
             _gap,
             ElevatedButton(
               onPressed: () {
-                Arithmetic arithmetic =
-                    Arithmetic(first: _first ?? 0, second: _second ?? 0);
+                Arithmetic arithmetic = Arithmetic();
                 setState(() {
-                  _result = arithmetic.sub();
+                  _result = arithmetic.sub(_first ?? 0, _second ?? 0);
                 });
               },
               child: const Text('Subtract'),
